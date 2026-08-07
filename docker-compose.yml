@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: pawmap
+      POSTGRES_PASSWORD: pawmap
+      POSTGRES_DB: pawmap
+    ports:
+      - "5432:5432"
+    volumes:
+      - pawmap-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  pawmap-postgres-data:
