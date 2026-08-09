@@ -32,6 +32,15 @@ Check it's up:
 curl http://localhost:5288/health
 ```
 
+The API applies EF Core migrations automatically on startup, so `dotnet run` is enough — no manual migration step.
+
+## API
+
+- `GET /health` — health check
+- `POST /found-pets` — multipart form: `species` (Dog/Cat/Other), `latitude`, `longitude`, `photo` (file), `comment` (optional)
+- `GET /found-pets` — list all found pets
+- `GET /found-pets/{id}` — a single found pet
+
 Run the app (from `app/`):
 
 ```bash

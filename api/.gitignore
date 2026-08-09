@@ -1,2 +1,4 @@
 bin/
 obj/
+wwwroot/photos/*
+!wwwroot/photos/.gitkeep
