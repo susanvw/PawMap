@@ -20,6 +20,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "PawMap uses your camera to photograph found pets."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "PawMap uses your location to record where a pet was found."
+        }
+      ]
+    ]
   }
 }
