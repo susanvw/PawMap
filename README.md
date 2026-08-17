@@ -12,6 +12,12 @@ Prove the core workflow: report a found pet (photo + GPS + optional comment) and
 - `api/` — ASP.NET 10 Minimal API
 - `docker-compose.yml` — local PostgreSQL
 
+## Branches
+
+- `development` — active work; feature branches PR into here
+- `uat` — promoted from `development` via PR
+- `main` — promoted from `uat` via PR
+
 ## Running locally
 
 Start Postgres:
