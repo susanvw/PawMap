@@ -10,7 +10,7 @@ Prove the core workflow: report a found pet (photo + GPS + optional comment) and
 
 - `app/` — React Native (Expo) mobile app
 - `api/` — ASP.NET 10 Minimal API
-- `docker-compose.yml` — local PostgreSQL
+- `docker-compose.yml` — local SQL Server
 
 ## Branches
 
@@ -20,7 +20,7 @@ Prove the core workflow: report a found pet (photo + GPS + optional comment) and
 
 ## Running locally
 
-Start Postgres:
+Start SQL Server:
 
 ```bash
 docker compose up -d

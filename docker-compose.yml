@@ -1,14 +1,13 @@
 services:
-  postgres:
-    image: postgres:17
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
-      POSTGRES_USER: pawmap
-      POSTGRES_PASSWORD: pawmap
-      POSTGRES_DB: pawmap
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "P@wMap123!"
     ports:
-      - "5432:5432"
+      - "1434:1433"
     volumes:
-      - pawmap-postgres-data:/var/lib/postgresql/data
+      - pawmap-sqlserver-data:/var/opt/mssql
 
 volumes:
-  pawmap-postgres-data:
+  pawmap-sqlserver-data:
