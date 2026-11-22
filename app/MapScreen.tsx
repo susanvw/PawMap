@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { ActivityIndicator, Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { API_URL } from './config';
+import { API_URL, photoUri } from './config';
 import { colors } from './theme';
 
 type FoundPet = {
@@ -169,7 +169,7 @@ export default function MapScreen({ active }: { active: boolean }) {
               </View>
             ) : (
               <Image
-                source={{ uri: `${API_URL}${selectedPet.photoUrl}` }}
+                source={{ uri: photoUri(selectedPet.photoUrl) }}
                 style={styles.detailsPhoto}
                 onError={() => setPhotoFailed(true)}
                 accessibilityLabel={`Photo of the found ${selectedPet.species.toLowerCase()}`}

@@ -1,0 +1,5 @@
+bin/
+obj/
+wwwroot/photos/*
+!wwwroot/photos/.gitkeep
+.DS_Store
