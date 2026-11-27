@@ -15,9 +15,11 @@ Prove the core workflow: report a found pet (photo + GPS + optional comment) and
 
 ## Branches
 
-- `development` — active work; feature branches PR into here
-- `uat` — promoted from `development` via PR
-- `main` — promoted from `uat` via PR
+All work is committed directly to `main`.
+
+## Documentation
+
+More docs, including the latest audit, are in [`documentation/`](documentation/README.md).
 
 ## Running locally
 
